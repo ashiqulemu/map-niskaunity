@@ -129,7 +129,6 @@ html {
   src: url(../fonts/Poppins-Light.otf);
 }
 body {
-  overflow-x: hidden;
   font-family: "poppins-light";
   background-color: #F7F8FE;
 }
