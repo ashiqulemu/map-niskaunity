@@ -156,7 +156,9 @@ html {
     src: url(../fonts/Poppins-Light.otf);
 }
 
-body { 
+ 
+
+body {
     font-family: 'poppins-light';
     background-color: #F7F8FE;
 }
@@ -199,8 +201,10 @@ body {
 //   navbar css
 
 .siteHeader {
-.navbar-nav{
-align-items: center;}
+    .navbar-nav {
+        align-items: center;
+    }
+
     .navbar-brand {
         img {
             @media(max-width:375px) {
