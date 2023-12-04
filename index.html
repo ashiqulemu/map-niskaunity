@@ -78,7 +78,7 @@
         <div id="container" style="width:100%; height:auto;">  
 <?xml version="1.0" encoding="utf-8"?>
  
-<svg id="map-niskaunity" style="min-width: 100%; height:100vh; cursor:grab; transform: scale(3);" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg id="map-niskaunity" style="min-width: 100%; height:100vh; cursor:grab;  " version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 5660.9 8114.6" style="enable-background:new 0 0 5660.9 8114.6;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#F7F8FA;}
@@ -17080,13 +17080,15 @@
     <script>
         // Don't use window.onLoad like this in production, because it can only listen to one function.
         window.onload = function () {
-            svgPanZoom('#map-niskaunity', {
+            panZoomInstance =  svgPanZoom('#map-niskaunity', {
                 zoomEnabled: true,
                 controlIconsEnabled: true,
                 fit: true,
-                center: true
+                center: true, 
             });
-        };
+            panZoomInstance.zoom(3);
+        }; 
+       
     </script>
 
 </body>
