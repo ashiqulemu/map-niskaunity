@@ -137,30 +137,18 @@ html {
 // font
 
 @font-face {
-    font-family: "poppins-regular";
-    src: url(../fonts/Poppins-Regular.otf);
-}
-
-@font-face {
-    font-family: "poppins-medium";
-    src: url(../fonts/Poppins-Medium.otf);
-}
-
-@font-face {
-    font-family: "poppins-bold";
-    src: url(../fonts/Poppins-Bold.otf);
-}
-
-@font-face {
-    font-family: "poppins-Light";
-    src: url(../fonts/Poppins-Light.otf);
-}
-
- 
+    font-family: "TaylorLight";
+    src: url(../fonts/TaylorLight.woff);
+} 
 
 body {
-    font-family: 'poppins-light';
+     font-family: "TaylorLight";
     background-color: #F7F8FE;
+    overflow: unset;
+}
+
+.navbar-light .navbar-toggler {
+    color: $white;
 }
 
 // top bar css
@@ -217,17 +205,11 @@ body {
         .nav-item {
             .nav-link {
                 margin-right: 0;
-                font-size: 15px;
+                font-size: 20px;
                 color: $white;
                 padding: 8px 12px;
-                border-radius: 4px;
-                font-family: 'poppins-regular';
-                text-transform: uppercase;
-
-                @media(max-width:1024px) {
-                    font-size: 14px;
-                }
-
+                border-radius: 4px; 
+                text-transform: uppercase; 
                 &:hover {
                     color: darken(#FFCE56, 15%);
                 }
