@@ -94,31 +94,31 @@
         </div>
         <div class="row col-lg-9 mx-auto my-3">
             <div class="inner-order rounded-3">
-               <form action="">
+               <form action="./mail.php" method="post">
                     <div class="form-group mb-4">
-                        <input type="text" class="form-control" placeholder="Name">
+                        <input type="text" class="form-control" placeholder="Name" name="name">
                     </div>
                     <div class="form-group mb-4">
-                        <input type="text" class="form-control" placeholder="Address">
+                        <input type="text" class="form-control" placeholder="Address" name="address">
                     </div>
                     <div class="form-group mb-4">
-                        <input type="text" class="form-control" placeholder="Phone Number">
+                        <input type="number" class="form-control" placeholder="Phone Number" name="phone">
                     </div>
                     <div class="form-group mb-4">
-                        <input type="text" class="form-control" placeholder="Email">
+                        <input type="email" class="form-control" placeholder="Email" name="email">
                     </div>
                     <div class="row text-white">
-                        <div class="col-md-4"><div class="items"> I'm available to help with:</div> </div>
+                        <div class="col-md-4"><div class="items mb-3"> I'm available to help with:</div> </div>
                         <div class="col-md-8 help">
-                             <div class="items">
+                             <div class="items mb-2">
                             <input type="checkbox" name="" id="folding"> 
                             <label for="folding">Folding bags</label>
                         </div> 
-                        <div class="items">
+                        <div class="items mb-2">
                             <input type="checkbox" name="" id="bag-sand"> 
                             <label for="bag-sand">Filling bag with sand</label>
                         </div> 
-                        <div class="items">
+                        <div class="items mb-2">
                             <input type="checkbox" name="" id="delivery"> 
                             <label for="delivery">Delivery</label>
                         </div> 
