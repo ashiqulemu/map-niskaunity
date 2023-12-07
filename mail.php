@@ -5,12 +5,21 @@ $address= $_POST['address'];
 $phone = $_POST['phone'];
 $email= $_POST['email'];
 
-$to = "info@broken-inn.com";
+$foldingBags = $_POST['foldingBags'];
+$fillingBagWithSand = $_POST['fillingBagWithSand'];
+$delivery = $_POST['delivery'];
 
+$luminaries= $_POST['luminaries'];
 
-$txt =" Name : ". $name . "\r\n Email : " . $email . "\r\n Phone : " . $phone ."\r\n Address : ". $address;
+$to = "ashiqulemu.jpi@gmail.com";
+//$to = "info@broken-inn.com";
 
-$headers = "From: noreply@diamondsguesthouse.com";
+$subject = "ORDER LUMINARIES"; 
+
+$txt =" Name : ". $name . "\r\n Email : " . $email . "\r\n Phone : " . $phone ."\r\n Address : ". $address . "\r\n Help with : " .$foldingBags." $fillingBagWithSand"." $delivery ". "\r\n Luminaries Needed : " . $luminaries;
+
+ $headers = "From: yourCompanyname.com";
+
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }

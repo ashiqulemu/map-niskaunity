@@ -89,37 +89,37 @@
                 </div>
             </div>
             <div class="col-md-5 text-end">
-                <a href="" class="view-map">CLICK TO VIEW THIS YEARS MAP</a>
+                <a href="https://broken-inn.com/luminaries/" class="view-map">CLICK TO VIEW THIS YEARS MAP</a>
             </div>
         </div>
         <div class="row col-lg-9 mx-auto my-3">
             <div class="inner-order rounded-3">
                <form action="./mail.php" method="post">
                     <div class="form-group mb-4">
-                        <input type="text" class="form-control" placeholder="Name" name="name">
+                        <input type="text" class="form-control" placeholder="Name" name="name" required>
                     </div>
                     <div class="form-group mb-4">
-                        <input type="text" class="form-control" placeholder="Address" name="address">
+                        <input type="text" class="form-control" placeholder="Address" name="address" required>
                     </div>
                     <div class="form-group mb-4">
-                        <input type="number" class="form-control" placeholder="Phone Number" name="phone">
+                        <input type="text" class="form-control" placeholder="Phone Number" name="phone" required>
                     </div>
                     <div class="form-group mb-4">
-                        <input type="email" class="form-control" placeholder="Email" name="email">
+                        <input type="email" class="form-control" placeholder="Email" name="email" required>
                     </div>
                     <div class="row text-white">
                         <div class="col-md-4"><div class="items mb-3"> I'm available to help with:</div> </div>
                         <div class="col-md-8 help">
                              <div class="items mb-2">
-                            <input type="checkbox" name="" id="folding"> 
+                            <input type="checkbox" name="foldingBags" value="Folding bags," id="folding"> 
                             <label for="folding">Folding bags</label>
                         </div> 
                         <div class="items mb-2">
-                            <input type="checkbox" name="" id="bag-sand"> 
+                            <input type="checkbox" name="fillingBagWithSand" value="Filling bag with sand," id="bag-sand"> 
                             <label for="bag-sand">Filling bag with sand</label>
                         </div> 
                         <div class="items mb-2">
-                            <input type="checkbox" name="" id="delivery"> 
+                            <input type="checkbox" name="delivery" value="Delivery" id="delivery"> 
                             <label for="delivery">Delivery</label>
                         </div> 
                         </div>
@@ -131,29 +131,29 @@
                                 <div class="col-md-6">
                                     <div class="items mb-2">
                                         <label for="luminaries-20">20</label>
-                                        <input type="checkbox" name="" id="luminaries-20"> 
+                                        <input type="radio" name="luminaries" value="20" id="luminaries-20"> 
                                         <span class="ms-3">Cost $14.00</span>
                                     </div>
                                     <div class="items mb-2">
                                         <label for="luminaries-30">30</label>
-                                        <input type="checkbox" name="" id="luminaries-30"> 
+                                        <input type="radio" name="luminaries" value="30" id="luminaries-30"> 
                                         <span class="ms-3">Cost $20.00</span>
                                     </div>
                                     <div class="items mb-2">
                                         <label for="luminaries-40">40</label>
-                                        <input type="checkbox" name="" id="luminaries-40"> 
+                                        <input type="radio" name="luminaries" value="40" id="luminaries-40"> 
                                         <span class="ms-3">Cost $24.00</span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="items mb-2">
                                         <label for="luminaries-50">50</label>
-                                        <input type="checkbox" name="" id="luminaries-50"> 
+                                        <input type="radio"name="luminaries" value="50" id="luminaries-50"> 
                                         <span class="ms-3">Cost $28.00</span>
                                     </div>
                                     <div class="items mb-2">
                                         <label for="luminaries-60">60</label>
-                                        <input type="checkbox" name="" id="luminaries-60"> 
+                                        <input type="radio" name="luminaries" value="60" id="luminaries-60"> 
                                         <span class="ms-3">Cost $32.00</span>
                                     </div>
                                 </div>
