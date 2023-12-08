@@ -11,14 +11,14 @@ $delivery = $_POST['delivery'];
 
 $luminaries= $_POST['luminaries'];
 
-$to = "ashiqulemu.jpi@gmail.com";
-//$to = "info@broken-inn.com";
+//$to = "ashiqulemu.jpi@gmail.com";
+$to = "info@broken-inn.com";
 
 $subject = "ORDER LUMINARIES"; 
 
-$txt =" Name : ". $name . "\r\n Email : " . $email . "\r\n Phone : " . $phone ."\r\n Address : ". $address . "\r\n Help with : " .$foldingBags." $fillingBagWithSand"." $delivery ". "\r\n Luminaries Needed : " . $luminaries;
+$txt =" Name : ". $name . "\r\n Email : " . $email . "\r\n Phone : " . $phone ."\r\n Address : ". $address . "\r\n I'm available to help with : " .$foldingBags." $fillingBagWithSand"." $delivery ". "\r\n Luminaries Needed : " . $luminaries;
 
- $headers = "From: yourCompanyname.com";
+ $headers = "From: $email ";
 
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
